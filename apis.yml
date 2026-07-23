@@ -1,7 +1,24 @@
 aid: atomionics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/atomionics.png
 name: Atomionics
-description: Atomionics is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Atomionics is a Singapore-based deep-technology company, founded in 2018, that builds quantum
+  sensors for mineral resource exploration and GPS-free navigation. Its Gravio quantum-grade gravity-sensing
+  platform uses cold-atom interferometry to measure tiny gravitational changes and map the Earth's subsurface
+  at high resolution, and its ORE-O AI geologist visualizes complex geologies and mineral deposits in 3D to
+  accelerate exploration for energy-transition resources such as copper, lithium, nickel, graphite and rare
+  earth elements. The company does not currently publish a public API or developer platform; this profile
+  tracks its identity and public web surface within the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/atomionics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Quantum Sensing
+- Geophysics
+- Mining
+- Mineral Exploration
+- Navigation
+- Deep Tech
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atomionics-domain-security.yml
 - type: Website
   url: https://atomionics.com
+- type: Blog
+  url: https://www.atomionics.com/news
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
